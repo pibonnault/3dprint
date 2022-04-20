@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+    <script src="js/js.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1">
+    <title>Impresoras</title>
+    <!--Llamada hoja de estilo-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<!-- BODY -->
+
+<body class="consejo">
+
+    <!--libreria jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!--popper-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <header>
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+
+            <!-- The slideshow -->
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img class="img-fluid" src="../images/La vida es más fácil gracias a la impresión en 3D.jpg"
+                                alt="Logo pagína web">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img class="img-fluid" src="../images/solo.jpg" alt="Segunda imagen carousel">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img class="img-fluid" src="../images/impre3d.jpg" alt="Tercera imagen carousel">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span></a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carosuel-control-next-icon"></span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand mt-2 mt-lg-0" href="../index.html"><span class="sr-only">(current)</span>
+            <img src="../images/3D print.png" alt="logo" height="50" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tipo impresoras
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="sla.html">SLA</a>
+                        <a class="dropdown-item" href="fdm.html">FDM</a>
+                        <a class="dropdown-item" href="inyeccion.html">Impresoras por inyección</a>
+                        <div class="dropdown-divider"></div>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="material.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Material para imprimir
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="resina.html">Resina</a>
+                        <a class="dropdown-item" href="filamento.html">Filamento</a>
+                        <a class="dropdown-item" href="inyeccion.html">por ver</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="consejos.html">Consejos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+
+    <!--SECTION-->
+    <section>
+        <article>
+            <div class="card-deck" id="cads">
+                <div class="card" id="card1">
+                    <img class="card-img-top" src="../images/ubicacion impresora.jpg" alt="Impresoras varias"
+                        height="400">
+                    <div class="card-body">
+                        <h5 class="card-title">¡No dejes tu impresora 3D en cualquier parte!</h5>
+                        <p class="card-text" id="card1">Una de las cosas más importantes antes de imprimir en 3D, es
+                            elegir una
+                            ubicación óptima para tu impresora 3D
+                            es algo muy importante a la hora de trabajar. Se recomienda tenerla en zonas de trabajo
+                            donde
+                            haya un buen
+                            equilibrio entre seguridad, máquina y usuario, donde se asegure una buena calidad de trabajo
+                            y
+                            una buena
+                            conservación del estado de la impresora 3D a la vez que una buena ventilación, ya que si
+                            imprimimos materiales
+                            más técnicos es recomendable hacerlo en un ambiente más abierto.
+                            Los lugares más recomendables para ubicar las impresoras 3D podría ser un escritorio junto a
+                            ti,
+                            asegurándote
+                            que tienes una toma de corriente en un lugar cercano. Además, de esta manera podrás revisar
+                            tus
+                            impresiones.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Actualizado hace 1 hora.</small>
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                    <img class="card-img-top" src="../images/almacenamientofilamento.jpg" alt="Filamento en cajas"
+                        height="400">
+                    <div class="card-body">
+                        <h5 class="card-title">Buen almacenamiento de filamento</h5>
+                        <p class="card-text" id="card2">Almacenar las bobinas de filamento es algo muy importante para
+                            mantener la
+                            humedad y evitar que el polvo se
+                            apodere de ellas. Si nuestras bobinas adquieren humedad o polvo pueden afectar negativamente
+                            a
+                            la calidad de
+                            nuestras impresiones y también podrían obstruir boquillas. Aunque el filamento PLA o PETG
+                            tiene
+                            menor riesgo
+                            de sufrir humedad o polvo, también pueden verse afectados.
+                        </p>
+                        <a href="https://www.youtube.com/embed/sxI7xDKutkg" class="btn btn-primary"
+                            target="_BLANK">Youtube</a>
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Actualizado hace 1 hora.</small>
+                    </div>
+                </div>
+                <div class="card" id="card3">
+                    <img class="card-img-top" src="../images/cama.jfif" alt="Card image cap" height="400">
+                    <div class="card-body">
+                        <h5 class="card-title">Prepara la cama de la impresora</h5>
+                        <p class="card-text" id="card3">Una de las cosas más importantes antes de imprimir en 3D es
+                            limpiar bien la
+                            cama caliente de restos de
+                            impresión.
+                            Para limpiar la cama puedes utilizar un limpiador como Flashcohol.
+                            Nivela la cama de tu impresora 3D correctamente. Sin una buena nivelación, el resultado de
+                            nuestra impresión no
+                            será efectiva y acabaremos frustrándonos con la la máquina. Al calibrar la cama tenemos que
+                            tener en cuenta una
+                            distancia óptima de 0.1mm entre la boquilla y la cama.
+                            Recuerda nivelar la cama con la temperatura de impresión que vayamos a utilizar. Por
+                            ejemplo, si
+                            vas a imprimir
+                            un
+                            filamento PLA, pon la temperatura de PLA. Para asegurarte de hacer un calibrado real, tienes
+                            que
+                            limpiar el
+                            Nozzle, asegurándote de que no queden restos de filamento en la boquilla. Si la boquilla
+                            está
+                            sucia al calibrar
+                            puede darnos malas mediciones.</p>
+                        <a href="https://www.youtube.com/embed/XoBj8gqCwxs" class="btn btn-primary"
+                            target="_BLANK">Youtube</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Actualizado hace 1 hora.</small>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <article>
+            <div class="card-deck">
+                <div class="card" id="card4">
+                    <img class="card-img-top" src="../images/cambiofilamento.jpg" alt="cambiando filamento"
+                        height="400">
+                    <div class="card-body">
+                        <h5 class="card-title">Cambio del filamento</h5>
+                        <p class="card-text" id="card4">A la hora de cargar el filamento en tu impresora 3D, esta opción
+                            puede ser
+                            manual o automática, aunque el
+                            filamento siempre lo tendremos que colocar en la entrada del sistema de extrusión
+                            manualmente.
+                            Si cambias de material, como por ejemplo de PETG u otro material más técnico a PLA no
+                            olvides
+                            pasar un filamento
+                            de limpieza, para así evitar que la boquilla se obstruya y se formen atascos.</p>
+                        <a href="https://www.youtube.com/embed/PriKGDs3qnc" class="btn btn-primary"
+                            target="_BLANK">Youtube</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Actualizado hace 1 hora.</small>
+                    </div>
+                </div>
+                <div class="card" id="card5">
+                    <img class="card-img-top" src="../images/configurar.jpg" alt="Configurar impresora" height="400">
+                    <div class="card-body">
+                        <h5 class="card-title">Configurar y no olvides</h5>
+                        <p class="card-text" id="card5">Si la boquilla está demasiado alta, el material puede ser
+                            extruido a través
+                            de
+                            líneas sueltas en lugar de líneas
+                            fijadas a la base. En cambio, si la boquilla está demasiado cerca de la cama, verás como las
+                            líneas están muy
+                            finas y muy pegadas a la base de impresión. Por eso, es altamente recomendable observar las
+                            primeras capas de tu
+                            objeto 3D para asegurarte de que todo está bien.
+                            No olvides que la boquilla puede llegar a alcanzar temperaturas por encima de los 180º, y a
+                            esta
+                            temperatura, si
+                            nos despistamos podemos quemarnos o quemar la cama de la impresora 3D.
+                        </p>
+                        <a href="https://www.youtube.com/embed/WbrU2yO2X74" class="btn btn-primary"
+                            target="_BLANK">Youtube</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Actualizado hace 1 hora.</small>
+                    </div>
+                </div>
+                <div class="card" id="card6">
+                    <img class="card-img-top" src="../images/tension.jpg" alt="tensionar correas" height="400">
+                    <div class="card-body">
+                        <h5 class="card-title">Comprobar la tensión de las correas y la lubricación de husillo</h5>
+                        <p class="card-text" id="card6">La tensión de las correas de cada eje deben de ser adecuadas (
+                            ni muy
+                            tensas ni muy flojas) una tensión media.
+                            Una de las cosas que solemos pasar por alto es la lubricación, aunque debemos tener en
+                            cuenta que una impresora
+                            3D
+                            necesita lubricación cuando escuchamos ciertos chirridos que antes no hacía. aplicando la
+                            lubricación de forma
+                            periódica.
+                            Si le damos poco uso: cada 1 o 2 meses, si le damos un uso medio cada mes y si es un uso
+                            diario cada dos o tres
+                            semanas.</p>
+                        <a href="https://www.youtube.com/embed/WDxpSt5v9dw" class="btn btn-primary"
+                            target="_BLANK">Youtube</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Actualizado hace 1 hora.</small>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="card-deck" id="deck">
+                <div class="card" id="card7">
+                    <img class="card-img-top" src="../images/herramientas.jpg" alt="cambiando filamento" height="400">
+                    <div class="card-body">
+                        <h5 class="card-title">Herramientas para el éxito</h5>
+                        <p class="card-text" id="card7">Hay herramientas fundamentales para el proceso de impresión 3D.
+                            Alicates de
+                            corte para cortar el filamento antes
+                            de ser insertado en el extrusor de la impresora 3D, útil también para quitar los soportes de
+                            las piezas. Una
+                            llave
+                            si tenemos que cambiar la boquilla o tenemos que desmontar alguna pieza de la impresora 3D.
+                            Una tarjeta SD donde
+                            vamos a insertar el modelo a imprimir.
+                            También es muy importante tener un kit de limpieza con agujas, pinzas, limpiador del hotend
+                            y spray de fijación
+                            como podría ser dimafix o 3DLac.</p>
+                        <a href="https://www.youtube.com/embed/M31r9xXVGmY" class="btn btn-primary"
+                            target="_BLANK">Youtube</a>
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Actualizado hace 1 hora.</small>
+                    </div>
+                </div>
+                <div class="card" id="card8">
+                    <img class="card-img-top" src="../images/limpieza.jpg" alt="Configurar impresora" height="400">
+                    <div class="card-body">
+                        <h5 class="card-title">Mantener la limpieza de tu impresora</h5>
+                        <p class="card-text" id="card8">Ahora que has manejado las cosas más importantes, es prioritario
+                            mantener
+                            una estación de trabajo limpia y
+                            organizada. Siempre que cortamos el filamento, hacemos cambios de bobina o utilizamos
+                            accesorios para nuestra
+                            impresora podemos dejar todo por medio. Es muy fácil dejar que se acumule una pila de cortes
+                            de filamentos,
+                            líneas
+                            de purga, faldas e impresiones fallidas.</p>
+                        <a href="https://www.youtube.com/embed/KkiwyjIR5nQ" class="btn btn-primary"
+                            target="_BLANK">Youtube</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Actualizado hace 1 hora.</small>
+                    </div>
+                </div>
+        </article>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-dark" href="https://mdbootstrap.com/">3D print</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- FIN BODY -->
+</body>
+
+</html>

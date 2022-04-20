@@ -1,108 +1,27 @@
-/*body*/
+
+/*body general*/
 
 body {
-  background-image: url(https://wallpapercave.com/wp/wp9100295.jpg);
-  background-size: cover;
   margin: 0;
   height: 100vh;
   min-height: 100%;
 }
 
-.bodyc{
-  background-image: url(https://wallpapercave.com/wp/wp9100295.jpg);
-  background-size: cover;
+/*style index*/
+
+.cuerpo {
   margin: 0;
   height: 100vh;
   min-height: 100%;
-}
-}
-
-/* imagen print 3d*/
-.cabecera {
-  position: relative;
-  display: inline-block;
-}
-.texto1 {
-  position: absolute;
-  left: 7%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 200px;
-  color: white;
-}
-
-/*css barra navegacion*/
-ul {
-  list-style: none;
-}
-
-.menu1 {
-  display: flex;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.menu1 > li {
-  text-align: center;
-  width: 50%;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.menu1 li a {
-  background-color: white;
-  background-size: cover;
   min-height: 100%;
-  color: black;
-  text-decoration: none;
-  padding: 12px 18px;
-  display: block;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.menu1 li a:hover {
-  background-color: #a6d6b5;
-}
-  
-.menu1 li:hover > ul {
-  display: block;
-}
-
-.menu1 li ul li {
-  position: relative;
-  margin-right: 10%;
-}
-
-.menu1 li ul li ul {
-  right: -140px;
-  top: 0px;
-  margin-right: 10%;
-}
-
-
-/*todo el contenido*/
-
-.texto2 {
-  text-align: justify;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-  color: white;
-}
-
-.antes {
-  font-size: xx-large;
-  text-align: center;
-  color: white ;
-}
-.quees{
-  text-align: center;
-  color: white;
 }
 
 .article1 {
   text-align: center;
-  color: white;
+  color: black;
 }
+
 .print {
-  
   display: block;
   /*background-color: #fafafa;*/
   margin-left: 20%;
@@ -111,19 +30,247 @@ ul {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.imageintro {
-  position: relative;  
-  float: inline-end;
+
+.antes {
+  font-size: xx-large;
   text-align: center;
+  color: black;
 }
 
-.ubicacionimp{
-  margin-left: 30%;
-  margin-right: 30%;
+.texto2 {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  color: black;
+}
+
+/*Style tipo impresoras*/
+
+/*SLA*/
+
+#cardsla{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#vidsla{
+  margin-left: 20%;
+}
+
+/*inyeccion*/
+.articulo2 {
+  text-align: center;
+  color: black;
+}
+
+.div4 {
+  display: block;
+  /*background-color: #fafafa;*/
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+/*FDM*/
+
+/*tipo material*/
+
+
+#carda{
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  margin-right: 5%;
+}
+
+#cardb{
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#cardc{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#cardd{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#carde{
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#cardf{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#cardg{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#cardh{
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#cardi{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#cardj{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#cardk{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 15%;
+}
+#cardl{
+  width: 1200px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: 15%;
+}
+
+/*consejos*/
+
+.consejo {
+  margin: 0;
+  height: 100vh;
+  min-height: 100%;
 }
 
 
-/*formulario contacto*/
+.card-deck{
+  border-color: #000000;
+  width: 1800px;
+}
+
+#card1 {
+  background-color: #000000;
+  color: #fbfbfb;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+
+#card2 {
+  background-color: #000000;
+  color: #fbfbfb;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#card3 {
+  background-color: #000000;
+  color: #fbfbfb;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#card4 {
+  background-color: #000000;
+  color: #fbfbfb;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#card5 {
+  background-color: #000000;
+  color: #fbfbfb;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#card6 {
+  background-color: #000000;
+  color: #fbfbfb;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#card7{
+  background-color: #000000;
+  color: #fbfbfb;
+  margin-left: 20%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#card8{
+  background-color: #000000;
+  color: #fbfbfb;
+  margin-right: 15%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/*galeria*/
+
+.bg {
+  background-image: url(https://wallpapercave.com/wp/wp9100295.jpg);
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+  min-height: 100%;
+}
+
+.tg {
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+}
+
+.subtg {
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+
+.imagen1 {
+  line-height: 0;
+  overflow: hidden;
+}
+.imgg {
+  width: 100%;
+  height: auto;
+}
+
+.imagen1 .imgg {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.f1:hover .imagen1 .imgg {
+  filter: blur(2px);
+}
+
+/*contacto*/
+
+.bodyc {
+  margin: 0;
+  height: 100vh;
+  min-height: 100%;
+}
+
 .formacontacto {
   width: 460px;
   height: auto;
@@ -223,189 +370,3 @@ p {
   outline: 0;
   border: 1px solid #97d848;
 }
-
-/*body index*/
-.cuerpo {
-  background-image: url(https://wallpapercave.com/wp/wp9100295.jpg);
-  background-size: cover;
-  margin: 0;
-  height: 100vh;
-  min-height: 100%;
-  min-height: 100%;
-}
-
-/*tipos impresoras*/
-
-.p2{
-  color: white;
-}
-
-.articulo2{
-  text-align: center;
-  color: white;
-}
-
-.div4 {
-  display: block;
-  /*background-color: #fafafa;*/
-  margin-left: 20%;
-  margin-right: 20%;
-  text-align: justify;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-}
-
-
-/*imagenes tipo impresoras*/
-.image3 {
-  position: relative;
-  float: inline-end;
-}
-
-/*tipo material*/
-
-.art1{
-  text-align: center;
-}
-
-.pp{
-  color: white;
-}
-
-.intro{
-  display: block;
-  /*background-color: #fafafa;*/
-  margin-left: 20%;
-  margin-right: 20%;
-  text-align: justify;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-}
-
-
-/* div tablas  tipo material */
-.div6 {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  color: #000000;
-  font-size: xxlarge;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* titulos tablas material*/
-.ttabla2 {
-  text-align: center;
-  color: #000000;
-  font-size: xxlarge;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* tabla 1 material*/
-.tabla {
-  text-align: center;
-  border-collapse: collapse;
-  border: #5d8bf4;
-  background-image: url(https://p4.wallpaperbetter.com/wallpaper/284/312/36/colorful-blurred-vertical-portrait-display-wallpaper-preview.jpg);
-  min-height: 100%;
-  background-size: cover;
-  width: 1200px;
-  height: 500px;
-}
-
-/* tabla 2 material*/
-.ttabla3 {
-  text-align: center;
-  color: #000000;
-  font-size: xxlarge;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.tabla3 {
-  text-align: center;
-  border-collapse: collapse;
-  border: #5d8bf4;
-  background-image: url(https://p4.wallpaperbetter.com/wallpaper/284/312/36/colorful-blurred-vertical-portrait-display-wallpaper-preview.jpg);
-  min-height: 100%;
-  background-size: cover;
-  width: 1200px;
-  height: 500px;
-}
-
-
-/* pie de pagina */
-footer{
-  padding: 0;
-  background-color: black ;
-  color:#4b4c4d
-}
-
-footer ul{
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-footer li{
-  padding: 0 10px;
-}
-
-iframe{
-  margin-left: 30%;
-  margin-right: 35%;
-}
-
-/*galeria*/
-.bg{
-  padding: 20px;
-  font-family: sans-serif;
-  background-image: url(https://wallpapercave.com/wp/wp9100295.jpg);
-  margin: 0;
-  height: 100vh;
-  min-height: 100%; 
-}
-
-
-.imgg{
-  width: 100%;
-  height: auto;
-}
-
-.tg{
-  margin-bottom: .5em;
-  text-align: center;
-  font-size: 50px;
-  color: white;
-}
-.subtg{
-  margin-bottom: .5em;
-  text-align: center;
-  font-size: 30px;
-  color: white;
-}
-
-.container{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1em; 
-}
-
-.imagen1{
-  line-height: 0;
-  overflow: hidden;
-}
-
-.imagen1 .imgg{
-  filter: blur(0px);
-  transition: filter 0.3s ease-in;
-  transform: scale(1.1);
-}
-
-.f1:hover .imagen1 .imgg{
-  filter: blur(2px);
-}
-
-
-
-
-

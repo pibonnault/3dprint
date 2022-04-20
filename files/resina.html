@@ -1,37 +1,309 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <link type="text/css" rel="stylesheet" href="../css/style.css" />
-  <title>3D</title>
-  <header class="cabecera">
-    <h1 class="texto1">Print 3D</h1>
-    <img src="https://www.torqueltd.co.uk/wp-content/uploads/2020/06/torque-banner-3d-printv2.jpg"
-      alt="No se puede cargar el archivo" width="1900" height="470" />
-
+    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+    <script src="../js/js.js"></script>
+    <title>Impresoras</title>
+    <!--Llamada hoja de estilo-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title>Documento sin título</title>
 </head>
 
 <body>
-  </header>
-  <nav class="nave">
-    <div class="menu">
-      <ul class="menu1">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="tipoimpresoras.html">Tipo impresoras</a></li>
-        <li>
-          <a href="material.html">Material impresión</a>
-          <ul>
-            <li><a href="filamento.html">Filamento</a></li>
-            <li><a href="resina.html">Resina</a></li>
-          </ul>
-        </li>
-        <li><a href="galeria.html">Galería</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
-  <footer class="pdp"></footer>
+    <!--libreria jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!--popper-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <header>
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+
+            <!-- The slideshow -->
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img class="img-fluid" src="../images/La vida es más fácil gracias a la impresión en 3D.jpg"
+                                alt="Logo pagína web">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img class="img-fluid" src="../images/solo.jpg" alt="Segunda imagen carousel">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img class="img-fluid" src="../images/impre3d.jpg" alt="Tercera imagen carousel">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span></a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carosuel-control-next-icon"></span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand mt-2 mt-lg-0" href="../index.html"><span class="sr-only">(current)</span>
+            <img src="../images/3D print.png" alt="logo" height="50" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tipo impresoras
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="sla.html">SLA</a>
+                        <a class="dropdown-item" href="fdm.html">FDM</a>
+                        <a class="dropdown-item" href="inyeccion.html">Impresoras por inyección</a>
+                        <div class="dropdown-divider"></div>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="material.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Material para imprimir
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="resina.html">Resina</a>
+                        <a class="dropdown-item" href="filamento.html">Filamento</a>
+                        <a class="dropdown-item" href="inyeccion.html">por ver</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="consejos.html">Consejos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+
+    <section>
+        <article>
+            <div class="card" id="carda">
+                <div class="card-body">
+                    <h5 class="card-title">Tipos de resinas</h5>
+                    <p class="card-text">La mayoría de usuarios son conocedores de los tipos de materiales dentro de la
+                        tecnología FDM, pero cuando se inician en la impresión 3D de resina suelen encontrarse con el
+                        problema de falta de conocimientos sobre los tipos de resinas. De la misma manera que en la
+                        tecnología FDM, para las impresoras 3D de resina existen dos grandes grupos de materiales:
+                        estándar y avanzados.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+                <img class="card-img-bottom" src="../images/resinas2.jpg" alt="Card image cap" >
+            </div>
+        </article>
+        <article>
+            <div class="card-deck">
+                <div class="card" id="cardb">
+                    <img class="card-img-top" src="../images/resina estandar.jpg" alt="Card image cap" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Resina estándar</h5>
+                        <p class="card-text">Se denomina "Resina estándar" a una resina que se emplea
+                            para fabricar piezas orientadas a un uso genérico en cualquiera impresora 3D de resina. Las
+                            resinas pertenecientes a esta categoría cuentan con un buen acabado superficial y
+                            propiedades mecánicas moderadas, como por ejemplo, resinas con propiedades similares al ABS
+                            (zABS), resinas para realizar impresiones realmente rápidas (zUDP) o incluso resinas que
+                            permiten crear el color que el usuario desee (Color Base Kit).</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card" id="cardc">
+                    <img class="card-img-top" src="../images/resina avanzada.avif" alt="Card image cap" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Resinas avanzadas</h5>
+                        <p class="card-text">Materiales resistentes, funcionales y dinámicos<br>
+                            Capaces de soportar sin romperse impactos y esfuerzos de compresión, estiramiento y
+                            flexión<br>
+                            Varios materiales con propiedades similares a las del ABS o el polietileno</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card" id="cardd">
+                    <img class="card-img-top" src="../images/clear resin.png" alt="Card image cap" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Clear Resin</h5>
+                        <p class="card-text">El único material completamente transparente para la impresión 3D en
+                            plástico.
+                            Pulido hasta casi una transparencia óptica.
+                        <h6>Se puede usar para:</h6>
+                        <p class="card-text">Piezas que requieran una transparencia óptica.</p>
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="card-deck">
+                <div class="card" id="carde">
+                    <img class="card-img-top" src="../images/draft resin.jpg" alt="Card image cap" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Draft resin</h5>
+                        <p class="card-text">Uno de los materiales más rápidos para la impresión 3D
+                            4 veces más rápida que las resinas estándar, 10 veces más rápida que el FDM</p>
+                        <h6>Se puede usar para:</h6>
+                        <p class="card-text">Prototipos iniciales e Iteraciones rápidas</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card" id="cardf">
+                    <img class="card-img-top" src="../images/Resinas Tough y Durable.jpg" alt="Card image cap" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Resinas Tough y Durable</h5>
+                        <p class="card-text">Materiales resistentes, funcionales y dinámicos
+                            Capaces de soportar sin romperse impactos y esfuerzos de compresión, estiramiento y flexión
+                            Varios materiales con propiedades similares a las del ABS o el polietileno</p>
+                        <h6>Se puede usar para:</h6>
+                        <p class="card-text">Carcasas, bastidores, Dispositivos de sujeción y de fijación, Conectores y Prototipos de
+                            desgaste.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card" id="cardg">
+                    <img class="card-img-top" src="../images/resinas rigid.jpg" alt="Card image cap" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Resinas Rigid</h5>
+                        <p class="card-text">Materiales reforzados, resistentes y rígidos que resisten la flexión
+                            Gran resistencia térmica y química
+                            Ofrecen una gran estabilidad dimensional bajo carga
+                        <h6>Se puede usar para:</h6>
+                        <p class="card-text">Dispositivos de sujeción y fijación y utillaje
+                            Turbinas y palas de ventilador
+                            Componentes para la circulación de fluidos y del aire Carcasas eléctricas y bastidores de
+                            automóviles</p>
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="card-deck">
+                <div class="card" id="cardh">
+                    <img class="card-img-top" src="../images/High temp resin.jpg" alt="Card image cap" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">High temp resin</h5>
+                        <p class="card-text">Alta resistencia a la temperatura y Alta precisión.</p>
+                        <h6>Se puede usar para: </h6>
+                        <p class="card-text">Flujo de aire caliente, gas y fluidos, soportes, Carcasas y fijaciones resistentes al calor,
+                            moldes e insertos.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card" id="cardi">
+                    <img class="card-img-top" src="../images/Resinas flexibles y elastic.jpg" alt="Card image cap" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Resinas flexibles y elastica</h5>
+                        <p class="card-text">Flexibilidad de la goma, TPU o silicona.
+                            Puede aguantar esfuerzos de flexión y compresión, resiste sin desgarros durante varios
+                            ciclos.
+                        </p>
+                        <h6>Se puede usar en: </h6>
+                        <p class="card-text">Creación de prototipos de bienes de consumo
+                            Componentes compatibles para robótica
+                            Dispositivos médicos y modelos anatómicos
+                            Modelos y atrezo para efectos especiales</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card" id="cardj">
+                    <img class="card-img-top" src="../images/Resinas médicas y odontológicas.jpeg" alt="Card image cap" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Resinas médicas y odontológicas</h5>
+                        <p class="card-text">Una amplia gama de resinas biocompatible para producir aparatos médicos y
+                            dentales
+                        <h6>Se puede usar para:</h6>
+                        <p class="card-text">Aparatos médicos y dentales, incluidas guías quirúrgicas, prótesis dentales y prótesis de
+                            otros
+                            tipos.
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="card-deck">
+                <div class="card" id="cardk">
+                    <img class="card-img-top" src="../images/Resinas para joyería.jfif" alt="Card image cap" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Resinas para joyería</h5>
+                        <p class="card-text">Materiales para la fundición a la cera perdida y el moldeo de caucho
+                            vulcanizado
+                            Fácil de fundir, con detalles complejos y fuerte mantenimiento de la forma.</p>
+                        <h6>Se puede usar en: </h6>
+                        <p class="card-text">Piezas de prueba
+                            Moldes maestros para moldes reutilizables
+                            Joyería personalizada</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card" id="cardl">
+                    <img class="card-img-top" src="../images/Ceramic resin.jpg" alt="Card image cap" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Ceramic resin</h5>
+                        <p class="card-text">Cabado de la superficie similar a la piedra
+                            Se puede cocer en un horno para crear una pieza completamente cerámica</p>
+                        <h6>Se puede usar en: </h6>
+                        <p class="card-text">Investigación en ingeniería
+                            Obras de arte y de diseño</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </article>
+    </section>
 </body>
 
 </html>
